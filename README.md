@@ -6,10 +6,10 @@
   To run this code, you have to get Node.js installed on your computer.
   Then go to the project folder and type
   <br>
-  npm init <br>
+  $ npm init <br>
   to the terminal. 
   Then run 
   <br> 
-  npm run start <br>
+  $ npm run start <br>
   and enjoy :)
 </p>
