@@ -5,6 +5,11 @@
   
   To run this code, you have to get Node.js installed on your computer.
   Then go to the project folder and type
-  npm init
-  to the terminal.
+  <br>
+  npm init <br>
+  to the terminal. 
+  Then run 
+  <br> 
+  npm run start <br>
+  and enjoy :)
 </p>
