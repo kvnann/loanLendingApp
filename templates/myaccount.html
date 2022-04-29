@@ -1,0 +1,30 @@
+<div class="app__myaccount">
+        <div class="app__myaccount_header">
+            <h1 class="display-4"><span id="firstNameForHeader"></span>'s Profile</h1>
+        </div>
+        <div class="app__myaccount_main">
+            <div class="app__myaccount_main_left">
+                <div class="img_container">
+                    <img src="../public/photos/default.jpg" alt="">
+                </div>
+                <div class="app__myaccount_details">
+                    <span id="firstNameForDetail">First Name</span>
+                    <span id="lastNameForDetail">Last Name</span>
+                </div>
+                <div class="actions">   
+                    <div><a href="tel:+994775774585"><button class="mbtn-white">Phone number</button></a></div>
+                    <div><a href="mailto:kenanab9@gmail.com"><button class="mbtn-white">Email</button></a></div>
+                    <div><a href="http://localhost:3000/posts/create"><button class="mbtn-white">Create Post</button></a></div>
+                    <div><a href="http://localhost:3000/account/edit"><button class="mbtn-white">Edit Account</button></a></div>
+                    <div><a href="http://localhost:3000/payment"><button class="mbtn-white">Increase balance</button></a></div>
+                    <div><button class="mbtn-white" id="deleteAccount">Delete Account</button></div>
+                    <div style="margin-top:10px;">Rating: <span class="rating">5.5</span></div>
+                </div>
+            </div>
+            <div class="app__myaccount_main_right">
+                <div class="app__dashboard_posts" id="posts">
+                    {posts}
+                </div>
+            </div>
+        </div>
+    </div>

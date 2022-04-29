@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../public/styleLogin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="login">
+
+    <div class="main">
+        <div class="part part-one" id="part-one">
+            <div class="myform" id="myform">
+                <div>
+                    <div class="header display-3" id="Welcome_back">
+                        Welcome Back!
+                    </div>
+                    <div class="text-muted">
+                        In a convenient service, for fast money lending, <br>and low interest rates.
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-sign" id="btn-signin">
+                            Sign in
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="p12" id="p12">
+                <div class="header display-3">
+                    Hello, Friend
+                </div>
+                <div class="text-muted">
+                    Sign up and get access to the easiest way of Loan lending!
+                </div>
+                <div class="btn-sign" id="btn-signup">Sign Up</div>
+            </div>
+        </div>
+        <div class="part part-two" id="part-two">
+            <div class="register" id="register">
+                <div>
+                    <h1 class="display-3 text-center">Create Account</h1>
+                    <div class="text-muted display-4" style="font-size: 30px;display: flex;justify-content: center;">
+                    </div>
+                    <form action="http://localhost:3000/api/users" id="accountCreate" method="POST">
+                        <div class="signup">
+                            <div class="maxput">
+                                <input type="text" class="minput1" name="firstName" placeholder="Name">
+                                <input type="text" class="minput2"  name="lastName" placeholder="Surname">
+                            </div>
+                            <input type="text" class="minput" name="fin" placeholder="FIN">
+                            <input type="email" class="minput" name="email" placeholder="Email">
+                            <div class="maxput">
+                                <input type="text" disabled class="minput1" name="phonefront" id="phonefront" value="+994">
+                                <input type="phone" class="minput2" name="phone" id="phone" max="9" placeholder="Phone (ex. 775774585)">
+                            </div>
+                            <input type="password"  class="minput" name="password" placeholder="Password">
+                            <input type="checkbox"class="minput" id="ch" name="age"><span class="sp" style="margin-left:-65px;">I am over 18</span>
+                            <input type="checkbox" style="text-align:left" class="minput" id="ch" name="tosAgreement"><span class="sp" style="margin-left: 20px;">I accept terms of service</span>
+                            <input type="submit" class="btn-submit" name="" placeholder="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="signin" id="signin">
+                <div>
+                    <div class="signin-inputs">
+                      <h1 class="display-3 text-center">Sign In</h1>
+                        <form action="http://localhost:3000/api/tokens" id="sessionCreate" method="POST">
+                            <input type="text" class="minput" name="phone" id="phone"  max="9" placeholder="Phone (ex. 775774585)">
+                            <input type="password" class="minput" name="password" placeholder="Password">
+                            <center><input type="submit" class="btn-submit" name="submit"></center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="../public/appLogin.js"></script>
+    <script src="../public/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

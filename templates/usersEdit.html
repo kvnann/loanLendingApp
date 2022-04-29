@@ -1,0 +1,36 @@
+<div class="formEdit">
+<form action="http://localhost:3000/api/users" method="post">
+  <input type="hidden" name="_method" value="put">
+    <div class="container">
+      <h1>Edit Account</h1>
+      <p>Please fill in this form to edit account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter email" name="email" id="email" required>
+      <label for="psw"><b>Choose profil picture:</b></label>
+      <input type="file" placeholder="Enter Percent" name="psw" id="psw" required>
+  
+     
+      <hr>
+      <button type="submit" class="registerbtn" style="width:200px">Confirm</button>
+    </div>
+  <hr>
+  </form>
+  <form action="http://localhost:3000/api/users" method="post">
+    <input type="hidden" name="_method" value="put">
+    <div class="container">
+      <h1>Change password</h1>
+     
+      <hr>
+
+      <label for="email"><b>New Password</b></label>
+      <input type="password" placeholder="Enter new password" name="password" id="password" required>
+
+    
+     
+      <hr>
+      <button type="submit" class="registerbtn" style="width:200px">Confirm</button>
+    </div>
+  
+  </form>
+</div>

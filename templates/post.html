@@ -1,0 +1,32 @@
+<div class="app__post_page" id="{postId}">
+    <div class="header">
+        <div class="detail">
+            <div class="img_container">
+                <img src="public/photos/default.jpg" alt="">
+            </div>
+            <h1 class="display-4">Deal by <a href="http://localhost:3000/user?id={userId}">{firstName} {lastName}</a></h1>
+        </div>
+    </div>
+    <div class="deal">
+        <br>
+        <center>
+            <h4 class="display-4"><span class="price">{price}</span> AZN <span class="percent">{percent}</span>%</h4>
+            <div style="font-size:25px;">You will pay: <span id="ywp">{ywp}</span> AZN</div>
+            <br>
+            <form action="http://localhost:3000/api/buy" id="buy" method="POST">
+                <select name="month" onchange="calculateLoan()"  id="month">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="hidden" name="price" value = "{price2}">
+                <input type="hidden" name="postId" value = "{postId2}">
+                <input type="hidden" name="loanBuyer" id="loanBuyer">
+                <input type="hidden" name="loanSeller" id="loanSeller" value="{phone3}">
+                <div>Money per month: <span class="mpm"></span></div>
+                <input type="submit" style="padding: 10px 80px;" class="mbtn" value="Buy">
+            </form>
+        </center>
+    </div>
+</div>

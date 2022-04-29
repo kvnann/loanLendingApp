@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+		<link
+			rel="shortcut icon"
+			href="public/favicon.ico"
+			type="image/ico"
+		/>
+		<title>Payment</title>
+
+		<link
+			rel="stylesheet"
+			href="public/paymentStyle.css"
+			type="text/css"
+		/>
+		<script
+			type="text/javascript"
+			src="public/jquery-1.9.1.min.js"
+		></script>
+		<script src="public/jquery.maskedinput.min.js"></script>
+		<script
+			defer
+			type="text/javascript"
+			src="public/main.js"
+		></script>
+
+		<noscript>
+			<meta
+				http-equiv="refresh"
+				content="0; url=./template/template/nojavascript.html"
+			/>
+		</noscript>
+	</head>
+
+	<body>
+		<div class="mainwrapper">
+			
+			<main>
+				<form id="cardentry" action="http://localhost:3000/api/users" method="post" autocomplete="off">
+					<input type="hidden" value="{phone4}">
+					<input type="hidden" name="_method" value="put">
+					<h1 style="font-size:40px;">Payment</h1><br><br>
+					<header class="ecom-header">
+						<label class="amount-label">Ümumi məbləğ</label>
+						<input type="number" name="newBalance" placeholder="Məbləğ">
+					</header>
+						<p id="transaction_props">
+						<input type="hidden" name="trans_id" value="VKupVn7ahvPXaTVbOWLnQ5c44ow=" readonly="readonly" />
+						<input type="hidden" name="count" value="1" readonly="readonly" />
+					</p>
+
+					<div class="input-field">
+						<label for="cardname">Ad Soyad</label>
+						<input
+							tabindex="1"
+							id="cardname"
+							name="cardname"
+							type="text"
+							maxlength="26"
+                            autocomplete="cc-name"
+							placeholder="Ad Soyad"
+						/>
+						<p
+							id="cardname-error-mandatory"
+							class="error-message hidden"
+						>
+							Xana məlumatları qeyd olunmalıdır
+						</p>
+						<p
+							id="cardname-error-alpha"
+							class="error-message hidden"
+						>
+							Rəqəm və simvollardan istifadə edilməməlidir
+						</p>
+					</div>
+
+					<div class="input-field">
+						<label for="cardnr">Kart nömrəsi</label>
+						<div class="input-with-icon">
+							<input
+								tabindex="2"
+								type="text"
+								id="cardnr"
+								name="cardnr"
+								placeholder="1234 1234 1234 1234"
+                                autocomplete="cc-number"
+							/>
+    
+						</div>
+						<p
+							id="cardnr-error-mandatory"
+							class="error-message hidden"
+						>
+							Xana məlumatları qeyd olunmalıdır
+						</p>
+						<p
+							id="cardnr-error-length"
+							class="error-message hidden"
+						>
+							16 rəqəmli olmalıdır.
+						</p>
+					</div>
+					<p id="keycode"></p>
+					<div class="input-group">
+						<div class="input-field">
+							<label for="expire-date">Kartın bitmə tarixi</label>
+							<input
+								id="expire-date"
+								type="text"
+								placeholder="ay / il"
+								maxlength="5"
+                                autocomplete="cc-exp"
+							/>
+							<p
+								id="expire-date-error-mandatory"
+								class="error-message hidden"
+							>
+								Xana məlumatları qeyd olunmalıdır
+							</p>
+							<p
+								id="expire-date-error-format"
+								class="error-message hidden"
+							>
+								Format yanlışdır
+							</p>
+							<input
+								type="hidden"
+								name="validMONTH"
+								id="month-input"
+							/>
+							<input
+								type="hidden"
+								name="validYEAR"
+								id="year-input"
+							/>
+						</div>
+
+						<div class="input-field">
+							<label for="cvc2">CVC2 / CVV2</label>
+							<div class="input-with-icon">
+								<input
+									id="cvc2"
+									name="cvc2"
+									type="password"
+									placeholder="123"
+									maxlength="3"
+                                    autocomplete="cc-csc"
+								/>
+							</div>
+							<p
+								id="cvc2-error-mandatory"
+								class="error-message hidden"
+							>
+								Xana məlumatları qeyd olunmalıdır
+							</p>
+							<p
+								id="cvc2-error-length"
+								class="error-message hidden"
+							>
+								3 rəqəmli olmalıdır
+							</p>
+						</div>
+					</div>
+					<button id="pay-btn" class="btn pay-btn" type="submit">
+						Ödəniş et
+					</button>
+				</form>
+			</main>
+		</div>
+
+		
+		<script src="public/app.js"></script>
+	</body>
+</html>
+

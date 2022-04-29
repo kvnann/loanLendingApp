@@ -1,0 +1,33 @@
+    <div class="home">
+    <form action="http://localhost:3000/api/posts" method="POST" id="postsCreate">
+        <div class="container">
+          <h1>Create post</h1>
+          <p>Please fill in this form to create an post.</p>
+          <hr>
+      
+          <label for="price"><b>Loan amount</b></label>
+          <input type="text" onchange="calculateTakerWillPay()" onkeydown="calculateTakerWillPay()" placeholder="Enter amount" name="price" id="price" required>
+      
+          <label for="percent"><b>Percent</b></label>
+          <input type="text" onchange="calculateTakerWillPay()" onkeydown="calculateTakerWillPay()" placeholder="Enter Percent" name="percent" id="percent" required>
+      
+          <label for="minRating"><b>Minimal required rating</b></label>
+          <input type="text" placeholder="Enter Rating" name="minRating" id="rating" required>
+          <input type="checkbox" checked class="minput" id="insurance" name="insurance"><span class="sp" style="margin:0 10px;" title="If your money will not be back, we will pay it for you at the moment, and the other way we will get 70% of your profit">Insurance</span><br><br>
+          <div class="half">
+            <div>
+              <label for="payAmount"><b>Loan taker will pay</b></label>
+              <input type="text" name="payAmount" id="payAmount" disabled>
+            </div>
+            <div>
+              <label for="profit"><b>Your profit</b></label>
+              <input type="text" name="profit" id="profit" disabled>
+            </div>
+          </div>
+          <hr>
+          <input type="submit" class="registerbtn" style="width:200px"/>
+        </div>
+      
+      </form>
+
+    </div>

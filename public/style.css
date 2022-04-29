@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    --red: rgb(224, 66, 66);
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.navbar_right ,  .navbar_left{
+    padding: 10px 50px;
+}
+.navbar_right{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_item{
+    margin: 0 10px ;
+}
+.navbar_item a{
+    color:black;
+    transition: .2s;
+}
+.navbar_item a:hover{
+    color:var(--red) !important;
+    text-decoration: none !important;
+}
+.headerTitle{
+    letter-spacing: 3px;
+}
+
+.footer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.app__home{
+    display: flex;
+    justify-content: center;
+
+}
+.app__home_main{
+    max-width:900px;
+    margin: 50px auto;
+    padding: 20px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.app__home_main .text{
+    margin: 20px 0;
+    max-width:700px;
+    text-align: center;
+}
+.app__home_main .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.mbtn{
+    background: black;
+    margin: 20px 10px;
+    color:white;
+    border:1px solid black;
+    padding: 10px 20px;
+    transition:.2s;
+}
+.mbtn:hover{
+    background: white;
+    color:black;
+}
+.mbtn-white{
+    background: white;
+    margin: 7px auto;
+    color:black;
+    border:1px solid white;
+    padding: 7.5px 20px;
+    width:150px;
+    transition:.2s;
+}
+.mbtn-white:hover{
+    background: black;
+    color:white;
+}
+.app__dashboard{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    margin-top: 40px;
+}
+.app__dashboard_main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__dashboard_posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:90%;
+    padding:0px 20px;
+}
+.app__dashboard_posts .post{
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    width:250px;
+    padding: 20px 5px;
+    margin: 10px 30px;
+    -webkit-box-shadow: 5px 5px 40px -2px rgba(0,0,0,0.58); 
+    box-shadow: 5px 5px 40px -2px rgba(0,0,0,0.58);
+    transition: .2s;
+}
+.biggersize{
+    height:450px;
+}
+.smallersize{
+    height:300px;
+}
+.app__dashboard_posts .post:hover{
+    -webkit-box-shadow: 5px 5px 40px -2px rgba(0,0,0,0.77); 
+    box-shadow: 5px 5px 40px -2px rgba(0,0,0,0.77);
+}
+.app__dashboard_posts .post img{
+    width:30px;
+    height:30px;
+    border-radius:20px;
+    margin: 0 3px;
+    
+}
+.app__dashboard_posts .post .span{
+    padding: 4px 10px;
+    background: #000;
+    margin: 5px;
+    color:white;
+}
+
+.app__dashboard_posts .post .post_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app__dashboard_posts .post div{
+    margin: 10px 0;
+}
+.app__dashboard_posts .post .profile_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.app__dashboard_posts .post .profile_container div{
+    margin: 0 5px;
+}
+name{
+    margin: 0 3px;
+}
+surname{
+    margin:0 2px;
+}
+.contact{
+    font-size:14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.rating{
+    text-align: center;
+    max-width:80%;
+}
+.rating span{
+    color:red;
+    padding: 1px 6px;
+}
+
+.main_center{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__myaccount{
+        width:80%;
+}
+
+.app__myaccount_main{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+.app__myaccount_header h1{
+    font-size:45px;
+    text-align: center;
+}
+.app__myaccount_main_left{
+    width:20%;
+    background: #000;
+    color:white;
+}
+.app__myaccount_main_right{
+    width:80%;
+}
+.img_container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.img_container img{
+    width:150px;
+    height:150px;
+    border-radius: 20px;
+}
+.app__myaccount_details{
+    text-align: center;
+    font-size:20px;
+    margin-bottom:20px;
+}
+.contact{
+    text-align: left;
+    padding: 0 30px;
+    font-size:16px;
+}
+.contact div{
+    margin:10px 0;
+}
+.app__myaccount_main_left .actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.app__dashboard_posts{
+    margin: 10px 30px;
+}
+
+.container {
+    padding: 16px;
+}
+  
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.actions .rating{
+    background: yellow;
+    padding: 10px;
+    color:black
+}
+.text-green{
+    color:rgb(76, 185, 76);
+}
+.half{
+    display: flex;
+    justify-content: space-between    ;
+}
+
+.bg-red{
+    background: rgb(214, 47, 47);
+    margin-bottom: -10px;
+    border:1px solid red;
+    color:white;
+}
+.text-red {
+    color: rgb(214, 47, 47);
+}
+.post a{
+    color:BLACK !important;
+}
+.post a:hover{
+    text-decoration:none;
+}
+.flex3-4{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.flex3-4-1{
+    width:10%;
+}
+.flex3-4-2{
+    width:90%;
+}
+/* 
+.app__post_page .header .detail{
+    transition: .2s;
+    padding: 20px;
+}
+.app__post_page .header .detail:hover{
+    -webkit-box-shadow: 0px 2px 27px 1px rgba(0,0,0,0.53); 
+box-shadow: 0px 2px 27px 1px rgba(0,0,0,0.53);
+} */
